@@ -210,6 +210,11 @@
   }
 
   /* Jquery Nosso Portfolio */
+
+    $('#consultoria').addClass('active')
+    $('.reparo').hide()
+    $('.end').hide()
+    $('.projetos').hide()
     $('#consultoria').on('click',function(){
         $('#inspecoes').removeClass('active')
         $('#projetos').removeClass('active')
