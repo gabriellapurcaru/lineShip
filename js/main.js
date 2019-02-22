@@ -209,6 +209,48 @@
     });
   }
 
+  /* Jquery Nosso Portfolio */
+    $('#consultoria').on('click',function(){
+        $('#inspecoes').removeClass('active')
+        $('#projetos').removeClass('active')
+        $('#reparos').removeClass('active')
+        $(this).addClass('active')
+        $('.projetos').hide()
+        $('.end').hide()
+        $('.reparo').hide()
+        $('.consultoria').show()
+    });
+    $('#inspecoes').on('click',function(){
+      $('#consultoria').removeClass('active')
+      $('#projetos').removeClass('active')
+      $('#reparos').removeClass('active')
+        $(this).addClass('active')
+        $('.projetos').hide()
+        $('.consultoria').hide()
+        $('.reparo').hide()
+        $('.end').show()
+    })
+    $('#projetos').on('click',function(){
+      $('#consultoria').removeClass('active')
+      $('#inspecoes').removeClass('active')
+      $('#reparos').removeClass('active')
+      $(this).addClass('active')
+      $('.end').hide()
+      $('.consultoria').hide()
+      $('.reparo').hide()
+      $('.projetos').show()
+    });
+    $('#reparos').on('click',function(){
+      $('#consultoria').removeClass('active')
+      $('#projetos').removeClass('active')
+      $('#reparos').removeClass('active')
+      $(this).addClass('active')
+      $('.end').hide()
+      $('.consultoria').hide()
+      $('.projetos').hide()
+      $('.reparo').show()
+    });
+
   /*---------------------
      Google Maps
   --------------------- */
